@@ -48,6 +48,7 @@ app.use(webpackHotMiddleWare(compiler, {
 }));
 
 app.use('/', index);
+app.use('/card', index);
 app.use('/*', notFound);
 
 

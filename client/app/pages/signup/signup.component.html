@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="signup-form-container">
+    <form #signForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <!--username-->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" [(ngModel)] = "user.name" required
+
+                >
+            </div>
+            <!--email-->
+            <div class="form-group">
+                <label for="username">Email</label>
+                <input type="text" class="form-control" id="email" name="email" [(ngModel)] = "user.email" required
+
+                       >
+            </div>
+            <!--password-->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" ngModel required>
+            </div>
+        </div>
+        <!--submit-->
+        <button type="submit" class="btn btn-primary">SignUp</button>
+    </form>
+
+</div>

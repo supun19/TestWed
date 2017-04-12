@@ -5,8 +5,8 @@ module.exports =  {
     jwtSecret: 'XXXXXXXXXXXXXXXX',
     db:{
         host: 'localhost',
-        user: 'XXXXXXX',
-        password: 'XXXXXXXXX',
-        database: 'XXXXXXXXX'
+        user: 'root',
+        password: '123',
+        database: 'wedding'
     }
 };

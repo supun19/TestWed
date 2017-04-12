@@ -85,13 +85,13 @@
 
 			// The input string might be different than the actual parsed HTML string!
 			// (<br> vs <br /> for example)
-			// So we have to force-parse this as HTML here!
+			// So cover1.jpg have to force-parse this as HTML here!
 			var isSameTitle = title === $("<div>" + notification.settings.content.title + "</div>").html().trim();
 			var isSameMsg = message === $("<div>" + notification.settings.content.message + "</div>").html().trim();
 			var isSameType = $el.hasClass('alert-' + notification.settings.type);
 
 			if (isSameTitle && isSameMsg && isSameType) {
-				//we found the dupe. Set the var and stop checking.
+				//cover1.jpg found the dupe. Set the var and stop checking.
 				isDupe = true;
 			}
 			return !isDupe;

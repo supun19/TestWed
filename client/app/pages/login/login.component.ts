@@ -17,6 +17,7 @@ export class LoginComponent {
     constructor(private authService: AuthService, private router: Router) { }
 
     onSubmit(form: any): void {
+
         this.authService.login(form).then(res => {
                 localStorage.setItem("CRM_USERNAME", res.name);
                 this.router.navigate([res.redirectURL]);
