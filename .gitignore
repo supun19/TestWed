@@ -8,3 +8,4 @@ typings/
 server/uploads/logos/*
 server/uploads/contracts/*
 server/uploads/screenshots/*
+.sass-cache/

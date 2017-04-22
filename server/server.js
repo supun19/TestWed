@@ -47,9 +47,9 @@ app.use(webpackHotMiddleWare(compiler, {
     heartbeat: 10 * 1000
 }));
 
-app.use('/', index);
-app.use('/card', index);
-app.use('/*', notFound);
+app.use('/*', index);
+app.use('/love', index);
+/*app.use('/!*', notFound);*/
 
 
 app.listen(port, function(){

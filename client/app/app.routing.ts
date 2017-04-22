@@ -6,8 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from "./pages/login/login.component";
 import { HomeComponent } from "./pages/home/home.component";
-import {SignupComponent} from "../app/pages/signup/signup.component";
-import {CardComponent} from "../app/pages/card/card.component";
+import { SignupComponent } from "../app/pages/signup/signup.component";
+import { LoveComponent } from "../app/pages/love/love.component";
 
 import { AuthGuard } from './guards/auth.gaurd';
 import { AuthService } from './services/auth.service';
@@ -15,9 +15,9 @@ import { AuthService } from './services/auth.service';
 const routes: Routes = [
 
     { path: '', component: HomeComponent },
-    {path:'login', component:LoginComponent},
-    {path:'signup', component:SignupComponent},
-    {path:'card', component:CardComponent},
+    {path:'login', component: LoginComponent},
+    {path:'signup', component: SignupComponent},
+    {path:'love', component: LoveComponent},
 
 ];
 @NgModule({

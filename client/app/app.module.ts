@@ -7,8 +7,8 @@ import { HttpModule }    from '@angular/http';
 import {AppComponent} from "./app.component";
 import { NavComponent } from "../app/pages/navbar/nav.component";
 import { HomeComponent } from "../app/pages/home/home.component";
-import {SignupComponent} from "../app/pages/signup/signup.component";
-import {CardComponent} from "../app/pages/card/card.component";
+import { SignupComponent } from "../app/pages/signup/signup.component";
+import { LoveComponent } from '../app/pages/love/love.component';
 
 //services
 import { AuthService } from './services/auth.service';
@@ -26,8 +26,7 @@ import {MainPipeModule} from "./pipes/main.pipe";
 @NgModule({
     imports: [BrowserModule, FormsModule, HttpModule, AppRoutingModule, MainPipeModule],
     declarations: [AppComponent,LoginComponent,NavComponent,HomeComponent,
-        SignupComponent,
-        CardComponent,
+        SignupComponent, LoveComponent
     ],
     providers: [AuthService, AuthGuard,UserService],
     bootstrap: [AppComponent],
